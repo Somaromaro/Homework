@@ -27,7 +27,7 @@ int f2(X *x) {
 
 void f3(X *x, char v) {
     if (f1(x)) {
-        printf("Buffer Overflow\n");
+        printf("Overflow\n");
         return;
     }
     x->b[x->t] = v;
@@ -37,7 +37,7 @@ void f3(X *x, char v) {
 
 char f4(X *x) {
     if (f2(x)) {
-        printf("Buffer Underflow\n");
+        printf("Underflow\n");
         return '\0';
     }
     char v = x->b[x->h];
