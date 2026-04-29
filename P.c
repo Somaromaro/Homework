@@ -50,7 +50,7 @@ int main() {
     X x;
     f0(&x);
 
-    char s[50];
+    char s[20];
     scanf("%s", s);
 
     strcat(s, "CE-ESY");
