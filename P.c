@@ -37,7 +37,7 @@ void f3(X *x, char v) {
 
 char f4(X *x) {
     if (f2(x)) {
-        printf("Underflow\n");
+        printf("empty\n");
         return '\0';
     }
     char v = x->b[x->h];
@@ -66,7 +66,7 @@ int main() {
     printf("\n");
 
     if (f2(&x)) {
-        printf("Buffer is now empty.\n");
+        printf("empty now\n");
     }
 
     return 0;
